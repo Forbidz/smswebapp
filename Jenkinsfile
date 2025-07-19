@@ -19,7 +19,7 @@ pipeline {
                         def scannerHome = tool 'SonarScanner_for_MSBuild'
                         bat """
                             ${scannerHome}\\SonarScanner.MSBuild.exe begin ^
-                            /k:"smswebapp" ^
+                            /k:"smswebapp-efinal1" ^
                             /d:sonar.host.url="http://localhost:9000" ^
                             /d:sonar.login=${SONAR_TOKEN}
                         """
